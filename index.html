@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Anglar LOB Application</title>
+    <script srd="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js"></script>
+</head>
+<body ng-app>
+    <table>
+        <thead>
+            <tr>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Code</td>
+                <td>Available</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="product in products">
+                <td><img ng-src="{{product.imageUrl}}" title="{{product.productName}}"> </td>
+                <td>{{product.productName}}</td>
+                <td>{{product.productCode}}</td>
+                <td>{{product.productData}}</td>
+                <td>{{product.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
